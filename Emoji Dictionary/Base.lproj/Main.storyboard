@@ -83,6 +83,10 @@
                             <constraint firstItem="JtP-ki-axb" firstAttribute="top" secondItem="Hk8-cl-gsm" secondAttribute="bottom" constant="40" id="x4k-ee-uhy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="3Kt-ZK-i4y" id="4DJ-fK-yNh"/>
+                        <outlet property="label" destination="JtP-ki-axb" id="eac-Ph-2Kz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVe-TA-zVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
