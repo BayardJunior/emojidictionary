@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="42f-sd-oaW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="42f-sd-oaW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,16 +28,17 @@
                         </userGuides>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-tq-RfH">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xAI-tq-RfH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bwp-MY-bBq"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xAI-tq-RfH" secondAttribute="bottom" id="GDR-1v-bV6"/>
-                            <constraint firstItem="xAI-tq-RfH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ORc-VK-nfY"/>
-                            <constraint firstAttribute="trailing" secondItem="xAI-tq-RfH" secondAttribute="trailing" id="dJj-9o-5OS"/>
+                            <constraint firstAttribute="trailing" secondItem="xAI-tq-RfH" secondAttribute="trailing" id="8lt-JW-glB"/>
+                            <constraint firstItem="xAI-tq-RfH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EK5-YQ-t9s"/>
+                            <constraint firstItem="xAI-tq-RfH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qzq-lo-uJY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xAI-tq-RfH" secondAttribute="bottom" id="Ytv-Yh-yta"/>
+                            <constraint firstItem="xAI-tq-RfH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nPc-lZ-fyZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xec-JW-OaX"/>
@@ -68,8 +69,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nenem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kt-ZK-i4y">
-                                <rect key="frame" x="157" y="368" width="61.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kt-ZK-i4y">
+                                <rect key="frame" x="144.5" y="368" width="86" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano de criação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBB-hA-0Pi">
+                                <rect key="frame" x="123.5" y="411" width="128" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vD-uG-CGw">
+                                <rect key="frame" x="146" y="454" width="83" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,6 +90,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8vD-uG-CGw" firstAttribute="centerX" secondItem="snH-xr-yvz" secondAttribute="centerX" id="9nO-Cm-Xzk"/>
+                            <constraint firstItem="HBB-hA-0Pi" firstAttribute="centerX" secondItem="snH-xr-yvz" secondAttribute="centerX" id="AF8-pN-ud9"/>
+                            <constraint firstItem="8vD-uG-CGw" firstAttribute="top" secondItem="HBB-hA-0Pi" secondAttribute="bottom" constant="20" id="CQP-xI-bHu"/>
+                            <constraint firstItem="HBB-hA-0Pi" firstAttribute="top" secondItem="3Kt-ZK-i4y" secondAttribute="bottom" constant="20" id="RA1-45-bUe"/>
                             <constraint firstItem="JtP-ki-axb" firstAttribute="centerX" secondItem="snH-xr-yvz" secondAttribute="centerX" id="Wo3-Hs-YGg"/>
                             <constraint firstItem="3Kt-ZK-i4y" firstAttribute="top" secondItem="JtP-ki-axb" secondAttribute="bottom" constant="25" id="i3b-Lg-13X"/>
                             <constraint firstItem="3Kt-ZK-i4y" firstAttribute="centerX" secondItem="snH-xr-yvz" secondAttribute="centerX" id="niX-ww-7iy"/>
@@ -84,6 +101,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="anoCriacao" destination="HBB-hA-0Pi" id="KcP-Gx-yBz"/>
+                        <outlet property="categoria" destination="8vD-uG-CGw" id="X0P-aN-5ZR"/>
                         <outlet property="definitionLabel" destination="3Kt-ZK-i4y" id="4DJ-fK-yNh"/>
                         <outlet property="label" destination="JtP-ki-axb" id="eac-Ph-2Kz"/>
                     </connections>

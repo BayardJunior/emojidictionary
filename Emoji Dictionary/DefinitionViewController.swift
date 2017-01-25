@@ -10,34 +10,20 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    @IBOutlet weak var categoria: UILabel!
+    @IBOutlet weak var anoCriacao: UILabel!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     
-    var emoji = ""
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        label.text = emoji
-        
-        if emoji=="👶🏻" {
-            definitionLabel.text = "That's a baby!"
-        };
-        if emoji == "😏" {
-            definitionLabel.text = "Trick face"
-        };
-        if emoji=="😋" {
-            definitionLabel.text = "Delicious face"
-        };
-        if emoji == "💩" {
-            definitionLabel.text = "poop"
-        };
-        if emoji=="👻" {
-            definitionLabel.text = "Ghost"
-        };
-        if emoji == "😀" {
-            definitionLabel.text = "Smile face"
-        };
+        label.text = emoji.stringEmoji
+        categoria.text = emoji.categoriaEmoji
+        anoCriacao.text = String(emoji.anoCriacao)
+        definitionLabel.text = emoji.descricao
         
     }
 
